@@ -1,16 +1,49 @@
 body{
+    display: grid;
     grid-template-areas: 'nav'
                          'banner'
                          'main'
                          'section'
                          'footer';
-    grid-template-columns: 100vw;                     
-}
-nav{
-    background-color: green;
+    grid-template-columns: 100vw;       
+    margin: 0;              
+    grid-template-rows: 1vh 200px 55px 70px 60px;
 }
 header{
-    font-family: 'Pacifico', cursive;
+    background-image: url(../images/banner.png);
+    background-size: cover;
     color: white;
-
+    grid-area: banner;
+    margin: 0;
+    display: flex; 
 }
+
+header div:nth-child(2){
+    display: flex;
+    align-items: flex-end;
+    margin-left: 50px;
+}
+
+header div img{
+    width: 150px;
+}
+header h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 15pt;
+    font-weight: normal;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-top: 50px;
+
+    
+}
+
+header p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 7pt;
+    margin-left: 50px;
+    line-height: 3px;
+}
+ nav{
+     background-color: #2bca6d;
+ }
