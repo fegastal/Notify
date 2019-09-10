@@ -2,12 +2,13 @@ body{
     display: grid;
     grid-template-areas: 'nav'
                          'banner'
-                         'main'
                          'section'
+                         'main'
                          'footer';
     grid-template-columns: 100vw;       
     margin: 0;              
     grid-template-rows: 1vh 200px 55px 70px 60px;
+    
 }
 header{
     background-image: url(../images/banner.png);
@@ -43,7 +44,29 @@ header p{
     font-size: 7pt;
     margin-left: 50px;
     line-height: 3px;
+
 }
  nav{
      background-color: #2bca6d;
+ 
+ }
+ section{
+     grid-area: section;
+     
+    }
+    section img{
+        border-radius: 100px;
+        background-color: #89c179;
+        border-color: #89c179;
+        border-style: solid;
+        border-bottom-width: 10px;
+        border-top-width: 10px;
+        border-right-width: 10px;
+        border-left-width: 10px;
+        
+    }
+    section div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
  }
