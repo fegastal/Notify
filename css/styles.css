@@ -7,7 +7,7 @@ body{
                          'footer';
     grid-template-columns: 100vw;       
     margin: 0;              
-    grid-template-rows: 1vh 60vh 40vh 50vh 60px;
+    grid-template-rows: 1vh 65vh 40vh 50vh 60px;
     
 }
 header{
@@ -30,7 +30,7 @@ header div:nth-child(1){
     margin-left: 45%;
 }
 
-header div:nth-child(2){
+.mao{
     display: flex;
     align-items: flex-end;
     grid-area: ladodireito;
@@ -61,7 +61,7 @@ header p{
     /* justify-content: center; */
     font-family: 'Roboto', sans-serif;
     font-size: 10pt;
-    line-height: 3px;
+    /* line-height: 3px; */
 
     
 }
@@ -119,4 +119,38 @@ section p{
     color: gray;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
+}
+
+.ios{
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ios:hover{
+    background-color: red;
+}
+
+.ios img{
+    height: 30px;
+    width: 30px;
+}
+
+.android{
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.android img{
+    height: 30px;
+    width: 30px;
 }
