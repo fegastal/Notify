@@ -7,7 +7,7 @@ body{
                          'footer';
     grid-template-columns: 100vw;       
     margin: 0;              
-    grid-template-rows: 1vh 200px 55px 70px 60px;
+    grid-template-rows: 1vh 60vh 40vh 50vh 60px;
     
 }
 header{
@@ -17,45 +17,70 @@ header{
     grid-area: banner;
     margin: 0;
     display: flex; 
+    display: grid;
+    grid-template-columns: 50% 50%;
+
 }
 
 header div:nth-child(2){
     display: flex;
     align-items: flex-end;
-    margin-left: 50px;
+    grid-template-areas: initial;
+    
 }
 
 header div img{
-    width: 150px;
+    width: 260px;
+    
 }
+
 header h1{
     font-family: 'Pacifico', cursive;
-    font-size: 15pt;
+    font-size: 25pt;
     font-weight: normal;
     text-decoration: none;
     margin-left: 50px;
     margin-top: 50px;
-
-    
+ 
 }
 
 header p{
     font-family: 'Roboto', sans-serif;
-    font-size: 7pt;
+    font-size: 10pt;
     margin-left: 50px;
     line-height: 3px;
+    
+}
+.icones div{
+    width: 50vh;
+}
+.icones div img{
+    width: 35px;
+    
 
 }
- nav{
-     background-color: #2bca6d;
- 
- }
- section{
-     grid-area: section;
-     
-    }
-    section img{
-        border-radius: 100px;
+nav{
+    background-color: #099443;
+    
+}
+main{
+    background-color: rgb(219, 213, 213);
+}
+section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-area: section;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+section div{
+    width: 75%;
+}
+
+section img{
+    border-radius: 100px;
         background-color: #89c179;
         border-color: #89c179;
         border-style: solid;
@@ -63,10 +88,22 @@ header p{
         border-top-width: 10px;
         border-right-width: 10px;
         border-left-width: 10px;
-        
+
     }
-    section div{
+    section .icones{
         display: flex;
-        align-items: center;
-        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        image-orientation: from-image;
+        margin-top: 50px;  
+        
  }
+ section h3{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+ }
+section p{
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
