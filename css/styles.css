@@ -15,16 +15,25 @@ header{
     background-size: cover;
     color: white;
     grid-area: banner;
-    margin: 0;
-    display: flex; 
+    margin: 0; 
     display: grid;
+    grid-template-areas: 'ladoesquerdo ladodireito';
     grid-template-columns: 50% 50%;
 
+}
+
+header div:nth-child(1){
+    grid-area: ladoesquerdo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 45%;
 }
 
 header div:nth-child(2){
     display: flex;
     align-items: flex-end;
+    grid-area: ladodireito;
     grid-template-areas: initial;
     
 }
@@ -36,12 +45,11 @@ header div img{
 }
 
 header h1{
-    display: flex;
+    /* display: flex; */
     font-family: 'Pacifico', cursive;
     font-size: 25pt;
     font-weight: normal;
-    justify-content: center;
-    margin-top: 22%;
+    /* justify-content: center; */
     text-decoration: none;
 
     
@@ -49,10 +57,12 @@ header h1{
 }
 
 header p{
+    /* display: flex; */
+    /* justify-content: center; */
     font-family: 'Roboto', sans-serif;
     font-size: 10pt;
-    margin-left: 210px;
     line-height: 3px;
+
     
 }
 .icones div{
@@ -83,7 +93,7 @@ section div{
 }
 
 section img{
-    border-radius: 100px;
+        border-radius: 100px;
         background-color: #89c179;
         border-color: #89c179;
         border-style: solid;
