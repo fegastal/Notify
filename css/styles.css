@@ -4,6 +4,7 @@ body{
                          'banner'
                          'section'
                          'main'
+                         'aside'
                          'footer';
     grid-template-columns: 100vw;       
     margin: 0;              
@@ -23,11 +24,12 @@ header{
 }
 
 header div:nth-child(1){
+    align-items: center;
     grid-area: ladoesquerdo;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 45%;
+    /* margin-left: 45%; */
 }
 
 .mao{
@@ -51,9 +53,10 @@ header h1{
     font-weight: normal;
     /* justify-content: center; */
     text-decoration: none;
-
+    margin: 0;
     
- 
+    
+    
 }
 
 header p{
@@ -61,6 +64,7 @@ header p{
     /* justify-content: center; */
     font-family: 'Roboto', sans-serif;
     font-size: 10pt;
+    margin-left: 10px;
     /* line-height: 3px; */
 
     
@@ -69,7 +73,8 @@ header p{
     width: 50vh;
 }
 .icones div img{
-    width: 50px;  
+    width: 40px;
+    height: 40px;  
 }
 nav{
     background-color: #099443;
@@ -113,11 +118,13 @@ section img{
  }
  section h3{
     font-family: 'Roboto', sans-serif;
+    font-weight: normal;
     text-decoration: none;
  }
 section p{
     color: gray;
     font-family: 'Roboto', sans-serif;
+    font-weight: normal;
     text-decoration: none;
 }
 
@@ -132,25 +139,48 @@ section p{
 }
 
 .ios:hover{
-    background-color: red;
+    background-color: green;
 }
 
 .ios img{
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
 }
 
-.android{
+div .android{
     border-radius: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 30px;
+    height: 30px;
+ 
 }
 
 .android img{
     height: 30px;
     width: 30px;
+}
+.windows img{
+    height: 30px;
+    width: 30px;
+
+}
+div .negocios{
+    display: flex;
+}
+main h4{
+    align-items: center;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    justify-content: center;
+    text-decoration: none;
+}
+main p{
+    align-items: center;
+    color: gray;
+    display: flex;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    text-decoration: none;
 }
