@@ -1,3 +1,7 @@
+aside{
+    grid-area: aside;
+    background-color: rgb(219, 213, 213);
+}
 body{
     display: grid;
     grid-template-areas: 'nav'
@@ -10,6 +14,9 @@ body{
     margin: 0;              
     grid-template-rows: 1vh 65vh 40vh 50vh 60px;
     
+}
+footer{
+    grid-area: footer;
 }
 header{
     background-image: url(../images/banner.png);
@@ -166,6 +173,9 @@ div .android{
 }
 div .negocios{
     display: flex;
+}
+main{
+    grid-area: main;
 }
 main h4{
     align-items: center;
