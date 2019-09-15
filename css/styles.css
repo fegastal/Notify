@@ -28,7 +28,8 @@ aside p {
     justify-content: center;
     text-decoration: none;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
+    padding: 6px;
 }
 
 .italic {
@@ -298,6 +299,10 @@ main .email button {
     padding: 10px 22px;
 }
 
+main .email .botao {
+    display: flex;
+}
+
 main .email input {
     border: 0;
     border-bottom-left-radius: 10px;
@@ -327,7 +332,6 @@ main iframe{
 
 
 main .email h4{
-    display: flex;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
     text-align: justify;
@@ -349,3 +353,4 @@ main .div .iframe {
     height: 400px;
     width: 100%;
 }
+
