@@ -1,4 +1,4 @@
-aside{
+aside {
     grid-area: aside;
     
 }
@@ -9,8 +9,18 @@ aside h5{
     justify-content: center;
     text-decoration: none;
     text-align: center;
+    font-size: 18px;
 }
-aside p{
+
+aside h6 {
+    align-items: center;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+}
+
+aside p {
     align-items: center;
     color: gray;
     display: flex;
@@ -18,6 +28,36 @@ aside p{
     justify-content: center;
     text-decoration: none;
     text-align: center;
+    margin-top: 50px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+aside > div.people img {
+    width: 40px;
+}
+aside .social-midias p {
+    align-items: center;
+    margin-top: -40px;
+}
+
+aside > div.social-midias > div.midias {
+    display: flex;
+}
+
+aside > div.social-midias > div.midias > div.icones {
+    background-color: #d6d6d6;
+    border-radius: 50%;
+    color: #ffff;
+    cursor: pointer;
+    height: 18px;
+    margin: 0 5px;
+    padding: 8px;
+    transition: background-color 1s;
+    width: 20px;
+    display: flex;
 }
 body{
     display: grid;
@@ -29,7 +69,7 @@ body{
                          'footer';
     grid-template-columns: 100vw;       
     margin: 0;              
-    grid-template-rows: 1vh 65vh 40vh 50vh 40vh 60px;
+    grid-template-rows: 1vh 65vh 40vh 50vh 50vh 60px;
     
 }
 
@@ -56,6 +96,7 @@ footer div a {
 }
 header{
     background-image: url(../images/banner.png);
+    background-size: 100%;
     /* background-size: cover; */
     color: white;
     grid-area: banner;
@@ -237,8 +278,40 @@ main .email .botao {
     background-color: #2dcb6f;
     color: whitesmoke;
     font-family: 'Roboto', sans-serif;
-    border-radius: 0 15x 15px 0px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-left: -5px;
+    color: #fff;
+    font-weight: 700;
+    border: 0;
+    padding: 10px 22px;
 }
+
+main .email .input {
+    border: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    width: 155px;
+}
+
+main .email .botao:focus {
+    outline: 0;
+}
+
+main .email .botao:hover {
+    background-color: #249d56;
+    transition: background-color .5s;
+}
+
+main .video {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 
 main h4{
     align-items: center;
@@ -249,7 +322,7 @@ main h4{
     text-align: center;
 }
 
-main p{
+main p {
     align-items: center;
     color: gray;
     display: flex;
@@ -258,6 +331,9 @@ main p{
     text-decoration: none;
     text-align: center;
 }
-main div iframe{
-    margin-top: 15px;
+
+main .div .iframe {
+    border-radius: 20px;
+    height: 400px;
+    width: 100%;
 }
