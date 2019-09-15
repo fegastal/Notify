@@ -35,11 +35,9 @@ aside p {
     font-style: italic;
 }
 
-aside > div.people img {
+aside > div.people > div.pessoas {
     justify-content: center;
-    text-align: center;
-    image-orientation: from-image;
-    margin:0;
+    display: flex;
 }
 
 aside .social-midias p {
@@ -49,6 +47,7 @@ aside .social-midias p {
 
 aside > div.social-midias > div.midias {
     display: flex;
+    justify-content: center;
 }
 
 aside > div.social-midias > div.midias > div.icones {
@@ -64,6 +63,11 @@ aside > div.social-midias > div.midias > div.icones {
     display: flex;
 }
 
+aside > div.social-midias > div.midias > div.icones:hover {
+    background-color: #2fcc70;
+    transition: background-color 1s;
+}
+
 body{
     display: grid;
     grid-template-areas: 'nav'
@@ -74,7 +78,7 @@ body{
                          'footer';
     grid-template-columns: 100vw;       
     margin: 0;              
-    grid-template-rows: 1vh 65vh 40vh 50vh 50vh 60px;
+    grid-template-rows: 1vh 65vh 40vh 50vh 60vh 60px;
     
 }
 
@@ -270,6 +274,7 @@ main {
     justify-content: space-around;
 }
 
+
 main .email {
     height: 100%;
     width: 50%;
@@ -279,20 +284,21 @@ main .email {
     align-items: center;
 }
 
-main .email .botao {
+
+main .email button {
     background-color: #2dcb6f;
     color: whitesmoke;
     font-family: 'Roboto', sans-serif;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     margin-left: -5px;
-    color: #fff;
+    cursor: pointer;
     font-weight: 700;
     border: 0;
     padding: 10px 22px;
 }
 
-main .email .input {
+main .email input {
     border: 0;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
@@ -300,8 +306,8 @@ main .email .input {
     width: 155px;
 }
 
-main .email .botao:focus {
-    outline: 0;
+main .email button:focus {
+    outline: -10px;
 }
 
 main .email .botao:hover {
@@ -309,32 +315,33 @@ main .email .botao:hover {
     transition: background-color .5s;
 }
 
-main .video {
-    height: 100%;
-    width: 50%;
+main iframe{
+    border-radius: 15px;
+    height: 250px;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    margin-right: -50px;
+    margin-top: 50px;
+
 }
 
 
-main h4{
-    align-items: center;
+main .email h4{
     display: flex;
     font-family: 'Roboto', sans-serif;
-    justify-content: center;
     text-decoration: none;
-    text-align: center;
+    text-align: justify;
+    margin: 0;
 }
 
-main p {
+main .email p {
     align-items: center;
     color: gray;
     display: flex;
     font-family: 'Roboto', sans-serif;
     justify-content: center;
     text-decoration: none;
-    text-align: center;
+    text-align: justify;
 }
 
 main .div .iframe {
